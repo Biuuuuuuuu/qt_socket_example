@@ -23,6 +23,7 @@ private slots:
     void go();
     void disconnected();
     void on_pushButton_clicked();
+    void on_pushButton_2_clicked();
 };
 
 #endif // MAINWINDOW_H

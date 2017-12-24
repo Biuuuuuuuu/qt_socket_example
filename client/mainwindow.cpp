@@ -38,3 +38,10 @@ void MainWindow::disconnected(){
     QMessageBox::information(this,"link closing",ret);
     this->close();
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    ui->pushButton->setText("connecting...");
+    ui->pushButton->setEnabled(false);
+    s->connectToHost(QHostAddress::LocalHost,11111);
+}
